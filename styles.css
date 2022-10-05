@@ -45,16 +45,36 @@
   text-align: center;
   }
 
-  .blue {
-    background-color: rgb(93, 143, 200);
+  .fiolet {
+    background-color: rgb(173, 164, 183);
   }
 
-  .lightgreen {
-    background-color: rgb(102, 166, 102);
+  .blue {
+    background-color: rgb(159, 199, 238);
   }
 
   .darkgreen {
-    background-color: rgb(172, 229, 172);
+    background-color: rgb(108, 175, 108);
+  }
+
+  .lightgreen {
+    background-color: rgb(206, 221, 206);
+  }
+
+  .orange {
+    background-color: rgb(232, 195, 166);
+  }
+
+  .yellow {
+    background-color: rgb(227, 189, 66);
+  }
+
+  .red {
+    background-color: rgb(242, 186, 190);
+  }
+
+  .grey {
+    background-color: grey;
   }
 
   .footer {

@@ -14,7 +14,7 @@
   <div class="flex_maincolumns">
     <div class="item">
       <div class="flex_subcolumns">
-        <div class="blue">
+        <div class="fiolet">
           <h4>1.1 Index Query</h4>
           <input type="checkbox" id="markdown1" name="markdown1" value="markdown1">
           <label for="markdown1"> (+) Correct</label><br>
@@ -25,7 +25,7 @@
           <input type="checkbox" id="markdown4" name="markdown4" value="markdown4">
           <label for="markdown4"> (/) N/A</label><br>
         </div>
-        <div class="blue">
+        <div class="fiolet">
           <h4>1.2 Web addresses</h4>
           <input type="checkbox" id="markdown5" name="markdown5" value="markdown5">
           <label for="markdown5"> (+) Correct</label><br>
@@ -38,7 +38,7 @@
           <input type="checkbox" id="markdown9" name="markdown9" value="markdown9">
           <label for="markdown9"> (-) Answer</label><br>
         </div>
-        <div class="lightgreen">
+        <div class="blue">
           <h4>1.3 Bug Explanation</h4>
           <input type="checkbox" id="markdown10" name="markdown10" value="markdown10">
           <label for="markdown10"> (+) Correct</label><br>
@@ -47,7 +47,7 @@
           <input type="checkbox" id="markdown12" name="markdown12" value="markdown12">
           <label for="markdown12"> (/) N/A</label>
         </div>  
-        <div class="lightgreen">
+        <div class="blue">
           <h4>1.4 Category of the case</h4>
           <input type="checkbox" id="markdown13" name="markdown13" value="markdown13">
           <label for="markdown13"> (+) Correct</label><br>
@@ -72,18 +72,17 @@
           <input type="checkbox" id="markdown20" name="markdown20" value="markdown20">
           <label for="markdown20"> (/) N/A</label><br>
         </div>  
-        <div class="darkgreen">
+        <div class="lightgreen">
           <h4>2.3 Round Policy</h4>
           <input type="checkbox" id="markdown21" name="markdown21" value="markdown21">
           <label for="markdown21"> No mistake noted</label><br>
           <input type="checkbox" id="markdown22" name="markdown22" value="markdown22">
           <label for="markdown22">
           <select name="markdown22" id="markdown22">
-            <option value="volvo"></option>
-            <option value="volvo">Volvo</option>
-            <option value="saab">Saab</option>
-            <option value="opel">Opel</option>
-            <option value="audi">Audi</option>
+            <option value="policy1">Policy 1</option>
+            <option value="policy2">Policy 2</option>
+            <option value="policy3">Policy 3</option>
+            <option value="policy4">Policy 4</option>
           </select></label><br>
         </div>  
       </div>
@@ -92,7 +91,7 @@
 
     <div class="item">
       <div class="flex_subcolumns">
-        <div>
+        <div class="lightgreen">
           <h4>2.3 Transfer to other departments</h4>
           <input type="checkbox" id="markdown23" name="markdown23" value="markdown23">
           <label for="markdown23"> (+) Correct</label><br>
@@ -115,7 +114,7 @@
           <input type="checkbox" id="markdown32" name="markdown32" value="markdown32">
           <label for="markdown32"> (/) N/A</label><br>
         </div>
-        <div>
+        <div class="orange">
           <h4>2.4 Web addresses decision</h4>
           <input type="checkbox" id="markdown33" name="markdown33" value="markdown33">
           <label for="markdown33"> (+) Correct</label><br>
@@ -128,7 +127,7 @@
           <input type="checkbox" id="markdown37" name="markdown37" value="markdown37">
           <label for="markdown37"> (Auto-fail) Opposite decision</label><br>
         </div>
-        <div>
+        <div class="orange">
           <h4>1.5 Immediate Escalation</h4>
           <input type="checkbox" id="markdown38" name="markdown38" value="markdown38">
           <label for="markdown38"> (+) Correct</label><br>
@@ -145,7 +144,7 @@
           <input type="checkbox" id="markdown44" name="markdown44" value="markdown44">
           <label for="markdown44"> (/) N/A</label><br>
         </div>  
-        <div>
+        <div class="yellow">
           <h4>3.1 Accuracy of Reply</h4>
           <input type="checkbox" id="markdown45" name="markdown45" value="markdown45">
           <label for="markdown45"> (+) Correct</label><br>
@@ -156,7 +155,7 @@
           <input type="checkbox" id="markdown48" name="markdown48" value="markdown48">
           <label for="markdown48"> (Auto-fail) Internal Info</label><br>
         </div>
-        <div>
+        <div class="yellow">
           <h4>3.2 Correctness&Accuracy</h4>
           <input type="checkbox" id="markdown49" name="markdown49" value="markdown49">
           <label for="markdown49"> (+) Correct</label><br>
@@ -171,7 +170,7 @@
           <input type="checkbox" id="markdown54" name="markdown54" value="markdown54">
           <label for="markdown54"> (Auto-fail) Incorrect reply template&Opposite decision</label><br>
         </div>
-        <div>
+        <div class="red">
           <h4>3.3 Status of the case</h4>
           <input type="checkbox" id="markdown55" name="markdown55" value="markdown55">
           <label for="markdown55"> (+) Correct</label><br>
@@ -189,7 +188,7 @@
 
     <div class="item">
       <div class="flex_subcolumns">
-        <div>
+        <div class="red">
           <h4>4.0 Data Protection Protocol</h4>
           <input type="checkbox" id="markdown60" name="markdown60" value="markdown60">
           <label for="markdown60"> (+) Correct Protocol</label><br>
@@ -198,7 +197,7 @@
           <input type="checkbox" id="markdown62" name="markdown62" value="markdown62">
           <label for="markdown62"> (/) N/A</label><br>
         </div>
-        <div>
+        <div class="grey">
           <h4>Language</h4>
           <input type="checkbox" id="language1" name="language1" value="Croatian">
           <label for="language1"> Croatian</label><br>
@@ -245,8 +244,53 @@
 </body>
 
 <footer class="footer">
-  <label for="casenumber">Case number:</label>
-  <input type="text" id="casenumber" name="casenumber">
-  <input type="submit" value="Submit">
+  <!-- Change the type, for, id and name, value -->
+  <label for="casenumber">Areas of strength**:</label>
+  <input type="text" id="casenumber" name="casenumber"><br>
+  <label for="casenumber">Areas of improvement**:</label>
+  <input type="text" id="casenumber" name="casenumber"><br><br><br>
+
+  <label for="casenumber">Closed date of last evaluated case:</label>
+  <input type="text" id="casenumber" name="casenumber"><br>
+  <label for="casenumber">Index in picked cases:</label>
+  <input type="text" id="casenumber" name="casenumber"><br><br><br>
+
+  <label for="casenumber">Cycle/Week:</label>
+  <select name="quater" id="quater">
+    <option value="volvo">Q3M2</option>
+    <option value="saab">Q3M3</option>
+    <option value="opel">Q4M1</option>
+    <option value="audi">Q4M2</option>
+  </select>
+  <select name="week" id="week">
+    <option value="volvo">Week 1</option>
+    <option value="saab">Week 2</option>
+    <option value="opel">Week 3</option>
+    <option value="audi">Week 4</option>
+  </select>
+  <select name="year" id="year">
+    <option value="volvo">2021</option>
+    <option value="saab">2022</option>
+    <option value="opel">2023</option>
+    <option value="audi">2024</option>
+  </select><br>
+
+  <label for="casenumber">QA email address**:</label>
+  <input type="text" id="casenumber" name="casenumber"><br>
+  <label for="casenumber">Agent Ldap**:</label>
+  <input type="text" id="casenumber" name="casenumber"><br>
+  <label for="casenumber">Case ID**:</label>
+  <input type="text" id="casenumber" name="casenumber"><br>
+  <label for="casenumber">Trigger case**:</label>
+  <input type="text" id="casenumber" name="casenumber"><br>
+  <label for="casenumber">Case pulled from other source**:</label>
+  <input type="text" id="casenumber" name="casenumber"><br>
+  <label for="casenumber">New Hire**:</label>
+  <input type="text" id="casenumber" name="casenumber"><br>
+
+  <button type="button">Submit</button>
+  <button type="button">&#8594 Next case</button>
+  <button type="button">&#8592 Previous case</button>
+
   </footer>
 </html>
