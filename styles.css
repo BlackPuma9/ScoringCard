@@ -74,7 +74,7 @@
   }
 
   .grey {
-    background-color: grey;
+    background-color: lightgrey;
   }
 
   .footer {
@@ -83,4 +83,8 @@
     background: #42A5F5;
     color: white;
     padding: 50px;
+    position: sticky;
+    width: 100%;
+    bottom: 0;
+    padding: 0;
   }
