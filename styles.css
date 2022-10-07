@@ -108,4 +108,17 @@
     .box2 {
       align-self: center;
     }
+
+    footer > div > div > label,
+    footer > div > div > div > div > label {
+      display: block;
+      float: left;
+      width : 220px; 
+    }
+
+    footer > div > div > input,
+    footer > div > div > div > div > input,
+    footer > div > div > div > div > select {
+      margin: 5px;
+    }
   
