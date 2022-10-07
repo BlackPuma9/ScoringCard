@@ -77,14 +77,35 @@
     background-color: lightgrey;
   }
 
-  .footer {
+  footer {
     grid-row-start: 2;
     grid-row-end: 3;
-    background: #42A5F5;
+    background: #a5d6fe;
     color: white;
     padding: 50px;
     position: sticky;
     width: 100%;
     bottom: 0;
-    padding: 0;
+    padding: 25px 40px 25px;
   }
+  
+  .flex-row-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+  }
+
+  .flex-column-container {
+    display: flex;
+    flex-direction: column;
+  }
+
+    img {
+      width: 100px;
+      height: 100px;
+    }
+
+    .box2 {
+      align-self: center;
+    }
+  

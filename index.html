@@ -245,52 +245,66 @@
 
 <footer class="footer">
   <!-- Change the type, for, id and name, value -->
-  <label for="casenumber">Areas of strength**:</label>
-  <input type="text" id="casenumber" name="casenumber"><br>
-  <label for="casenumber">Areas of improvement**:</label>
-  <input type="text" id="casenumber" name="casenumber"><br><br><br>
+  
+  <div class="flex-row-container">
 
-  <label for="casenumber">Closed date of last evaluated case:</label>
-  <input type="text" id="casenumber" name="casenumber"><br>
-  <label for="casenumber">Index in picked cases:</label>
-  <input type="text" id="casenumber" name="casenumber"><br><br><br>
+    <div class="box1">
+      <div class="flex-column-container">
+        <div><img src="majorel logo.svg" alt="Majorel Company Logo"></div>
+        <div>
+          <label for="casenumber">Areas of strength**:</label>
+          <input type="text" id="casenumber" name="casenumber"><br>
+          <label for="casenumber">Areas of improvement**:</label>
+          <input type="text" id="casenumber" name="casenumber"><br><br><br>
+        </div>
+    
+        <div>
+          <label for="casenumber">Closed date of last evaluated case:</label>
+          <input type="text" id="casenumber" name="casenumber"><br>
+          <label for="casenumber">Index in picked cases:</label>
+          <input type="text" id="casenumber" name="casenumber"><br><br><br>
+        </div>
+    </div>
+    </div>
 
-  <label for="casenumber">Cycle/Week:</label>
-  <select name="quater" id="quater">
-    <option value="volvo">Q3M2</option>
-    <option value="saab">Q3M3</option>
-    <option value="opel">Q4M1</option>
-    <option value="audi">Q4M2</option>
-  </select>
-  <select name="week" id="week">
-    <option value="volvo">Week 1</option>
-    <option value="saab">Week 2</option>
-    <option value="opel">Week 3</option>
-    <option value="audi">Week 4</option>
-  </select>
-  <select name="year" id="year">
-    <option value="volvo">2021</option>
-    <option value="saab">2022</option>
-    <option value="opel">2023</option>
-    <option value="audi">2024</option>
-  </select><br>
-
-  <label for="casenumber">QA email address**:</label>
-  <input type="text" id="casenumber" name="casenumber"><br>
-  <label for="casenumber">Agent Ldap**:</label>
-  <input type="text" id="casenumber" name="casenumber"><br>
-  <label for="casenumber">Case ID**:</label>
-  <input type="text" id="casenumber" name="casenumber"><br>
-  <label for="casenumber">Trigger case**:</label>
-  <input type="text" id="casenumber" name="casenumber"><br>
-  <label for="casenumber">Case pulled from other source**:</label>
-  <input type="text" id="casenumber" name="casenumber"><br>
-  <label for="casenumber">New Hire**:</label>
-  <input type="text" id="casenumber" name="casenumber"><br>
-
-  <button type="button">Submit</button>
-  <button type="button">&#8594 Next case</button>
-  <button type="button">&#8592 Previous case</button>
-
+    <div class="box2">
+      <label for="casenumber">Cycle/Week:</label>
+      <select name="quater" id="quater">
+        <option value="volvo">Q3M2</option>
+        <option value="saab">Q3M3</option>
+        <option value="opel">Q4M1</option>
+        <option value="audi">Q4M2</option>
+      </select>
+      <select name="week" id="week">
+        <option value="volvo">Week 1</option>
+        <option value="saab">Week 2</option>
+        <option value="opel">Week 3</option>
+        <option value="audi">Week 4</option>
+      </select>
+      <select name="year" id="year">
+        <option value="volvo">2021</option>
+        <option value="saab">2022</option>
+        <option value="opel">2023</option>
+        <option value="audi">2024</option>
+      </select><br>
+    
+      <label for="casenumber">QA email address**:</label>
+      <input type="text" id="casenumber" name="casenumber"><br>
+      <label for="casenumber">Agent Ldap**:</label>
+      <input type="text" id="casenumber" name="casenumber"><br>
+      <label for="casenumber">Case ID**:</label>
+      <input type="text" id="casenumber" name="casenumber"><br>
+      <label for="casenumber">Trigger case**:</label>
+      <input type="text" id="casenumber" name="casenumber"><br>
+      <label for="casenumber">Case pulled from other source**:</label>
+      <input type="text" id="casenumber" name="casenumber"><br>
+      <label for="casenumber">New Hire**:</label>
+      <input type="text" id="casenumber" name="casenumber"><br>
+    
+      <button type="button">Submit</button>
+      <button type="button">&#8594 Next case</button>
+      <button type="button">&#8592 Previous case</button>
+    </div>
+  </div>
   </footer>
 </html>
