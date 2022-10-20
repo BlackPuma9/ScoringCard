@@ -8,25 +8,20 @@
 
   .item {
     margin: 0.5rem;
-    /* background: #f3edd6; */
     border: 3px solid #b59214;
     color: black;
     padding: 1rem;
     font-size: 2rem;
-    /* text-align: center; */
   }
 
   .flex_subcolumns {
     display: flex;
     flex-direction: column;
-    /* background-color: DodgerBlue; */
   }
   
   .flex_subcolumns > div {
-    /* background-color: #f1f1f1; */
     width: auto;
     margin: 10px;
-    /* text-align: center; */
     line-height: 30px;
     font-size: 15px;
   }
@@ -83,21 +78,11 @@
     background: #a5d6fe;
     color: white;
     padding: 50px;
-    position: sticky;
+    /* position: sticky; */
     width: 100%;
     bottom: 0;
-    padding: 25px 40px 25px;
-  }
-  
-  .flex-row-container {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
-  }
-
-  .flex-column-container {
-    display: flex;
-    flex-direction: column;
+    padding: 0;
+    margin: 0;
   }
 
     img {
@@ -105,20 +90,4 @@
       height: 100px;
     }
 
-    .box2 {
-      align-self: center;
-    }
-
-    footer > div > div > label,
-    footer > div > div > div > div > label {
-      display: block;
-      float: left;
-      width : 220px; 
-    }
-
-    footer > div > div > input,
-    footer > div > div > div > div > input,
-    footer > div > div > div > div > select {
-      margin: 5px;
-    }
   
