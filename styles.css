@@ -83,6 +83,7 @@
   .flex_button {
     display: flex;
     flex-direction: row;
+    gap: 6px;
   }
   select {
     display: block;
