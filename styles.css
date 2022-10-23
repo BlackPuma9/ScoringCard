@@ -58,6 +58,7 @@
     background-color: #CECECE;
     margin-left: 35px;
     padding: 20px;
+    font-weight: bold;
     font-size: 17px;
     border: 2px black;
     border-style: solid;
@@ -79,6 +80,7 @@
   button {
     width: 100px;
     display: block;
+    font-weight: bold;
   }
 
   .flex_button {
@@ -96,7 +98,7 @@
   }
 
   .markdowns_category {
-    background-color: #E2E8DD;
+    background-color: #ccd0c2;
   }
 
   footer {
