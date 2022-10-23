@@ -33,7 +33,8 @@
     min-height: 100%;
     display: grid;
     grid-template-rows: 1fr auto;
-    background-color: #E2E8DD;
+    background-color: white;
+    /* background-color: #E2E8DD; */
   }
 
   .header {
@@ -94,29 +95,9 @@
 
   }
 
-  /* .fiolet {
-    background-color: rgb(173, 164, 183);
+  .markdowns_category {
+    background-color: #E2E8DD;
   }
-
-  .blue {
-    background-color: rgb(159, 199, 238);
-  }
-
-  .darkgreen {
-    background-color: rgb(108, 175, 108);
-  }
-
-  .yellow {
-    background-color: rgb(227, 189, 66);
-  }
-
-  .red {
-    background-color: rgb(242, 186, 190);
-  }
-
-  .grey {
-    background-color: lightgrey;
-  } */
 
   footer {
     grid-row-start: 3;
