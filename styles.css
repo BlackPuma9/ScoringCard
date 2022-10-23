@@ -80,6 +80,14 @@
     display: block;
   }
 
+  .flex_button {
+    display: flex;
+    flex-direction: row;
+  }
+  select {
+    display: block;
+  }
+
   #last_column {
     margin-right: 35px;
 
