@@ -13,11 +13,16 @@
 <body>
 <!-- Upper footer based on the flexbox-->
   <div class="header"> 
-    <img src="img/quality icon.svg">
-    <div class="header_links">
-      <a href="">Log in</a>
-      <a href="">Evaluation card</a>
-      <a href="">About</a>
+    <!-- Flexbox between logo and company name -->
+    <div class="flex_logo">
+      <img src="img/company logo.png">
+      <span>Scori 2.0</span>
+    </div>
+  
+    <div class="header_links_flex">
+      <a href="" class="header_button">Log in</a>
+      <a href="" class="header_button">Evaluation card</a>
+      <a href="" class="header_button">About</a>
     </div>
   </div>
   
@@ -80,7 +85,6 @@
       <div class="flex_subcolumns">
         <div class="markdowns_category">
           <h2>1. Customer Authorization</h2>
-          <!-- Check id name, value and label for in these 3 columns -->
           <input type="checkbox" id="markdown1" name="markdown1" value="markdown1">
           <label for="markdown1"> (+) Correct</label><br>
           <input type="checkbox" id="markdown2" name="markdown2" value="markdown2">
@@ -219,8 +223,8 @@
           <label for="language17"> Belarusian</label><br>
           <input type="checkbox" id="language18" name="language18" value="Slovenian">
           <label for="language18"> Slovenian</label><br>
-          <input type="checkbox" id="language19" name="language19" value="Russian">
-          <label for="language19"> Russian</label><br>
+          <input type="checkbox" id="language19" name="language19" value="Norwegian">
+          <label for="language19"> Norwegian</label><br>
           <input type="checkbox" id="language20" name="language20" value="Other">
           <label for="language20"> Other</label><br>
         </div> 

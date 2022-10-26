@@ -45,13 +45,27 @@
     padding: 5px 35px 5px 35px;
     }
 
-  .header_links {
+    .flex_logo {
+      display: flex;
+      color: white;
+      flex-direction: row;
+      align-items: center;
+      gap: 10px;
+      font-size: 35px;
+    }
+
+  .header_links_flex {
     color: white;
     height: 50px;
     display: flex;
-    justify-content: flex-end;
     align-items: center;
     gap: 100px;
+    }
+
+    .header_button {
+      border:1px white solid;
+      padding: 5px 10px 5px 10px;
+      border-radius: 5px;
     }
 
   a {
@@ -100,7 +114,6 @@
 
   #last_column {
     margin-right: 35px;
-
   }
 
   .markdowns_category {
@@ -121,8 +134,8 @@
   }
 
   img {
-    width: 50px;
-    height: 50px;
+    width: 40px;
+    height: 40px;
     filter: invert(200%) sepia(33%) saturate(1352%) hue-rotate(300deg) brightness(119%) contrast(100%);
   }
 
