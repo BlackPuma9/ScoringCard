@@ -9,8 +9,9 @@
   <link rel="stylesheet" type="text/css" href="styles.css" />
 </head>
 
+<!-- Body written based on grid system and footer as well -->
 <body>
-<!-- Upper footer -->
+<!-- Upper footer based on the flexbox-->
   <div class="header"> 
     <img src="img/quality icon.svg">
     <div class="header_links">
@@ -22,23 +23,23 @@
   
 
   <div class="flex_maincolumns">
-    <!-- Change this column to the evaluation footer -->
+    <!-- "Evaluation column" -->
     <div class="item">
       <div id="criteria_first_column" class="flex_subcolumns">
         <h1>Evaluation Card</h1>
-          <label for="casenumber">QA email address:</label>
-          <input type="text" id="casenumber" name="casenumber"><br>
-          <label for="casenumber">Agent Ldap:</label>
-          <input type="text" id="casenumber" name="casenumber"><br>
+          <label for="qamail">QA email address:</label>
+          <input type="text" id="qamail" name="qamail"><br>
+          <label for="agent_mail">Agent Ldap:</label>
+          <input type="text" id="agent_mail" name="agent_mail"><br>
           <label for="casenumber">Case ID:</label>
           <input type="text" id="casenumber" name="casenumber"><br>
 
-          <label for="casenumber">Areas of strength:</label>
-          <input type="text" id="casenumber" name="casenumber"><br>
-          <label for="casenumber">Areas of improvement:</label>
-          <input type="text" id="casenumber" name="casenumber"><br>
+          <label for="qacomment">QA comment:</label>
+          <input type="text" id="qacomment" name="qacomment"><br>
+          <label for="improveline">Areas of improvement:</label>
+          <input type="text" id="improveline" name="improveline"><br>
 
-          <label for="casenumber">Cycle/Week:</label>
+          <label for="cycle">Cycle/Week:</label>
           <select name="quater" id="quater">
               <option value="Q1M1">Q1M1</option>
               <option value="Q1M2">Q1M2</option>
@@ -78,7 +79,7 @@
     <div class="item">
       <div class="flex_subcolumns">
         <div class="markdowns_category">
-          <h2>1.1 Customer Authorization</h2>
+          <h2>1. Customer Authorization</h2>
           <!-- Check id name, value and label for in these 3 columns -->
           <input type="checkbox" id="markdown1" name="markdown1" value="markdown1">
           <label for="markdown1"> (+) Correct</label><br>
@@ -86,7 +87,7 @@
           <label for="markdown2"> (-) Incorrect</label><br>
         </div>
         <div class="markdowns_category">
-          <h2>1.2 Greetings and tone</h2>
+          <h2>2. Greetings and conversation tone</h2>
           <input type="checkbox" id="markdown5" name="markdown5" value="markdown5">
           <label for="markdown5"> (+) Correct</label><br>
           <input type="checkbox" id="markdown6" name="markdown6" value="markdown6">
@@ -95,7 +96,7 @@
           <label for="markdown7"> (-) Incorrect</label><br>
         </div>
         <div class="markdowns_category">
-          <h2>1.3 Case resolution</h2>
+          <h2>3. Case resolution</h2>
           <input type="checkbox" id="markdown10" name="markdown10" value="markdown10">
           <label for="markdown10"> (+) Correct</label><br>
           <input type="checkbox" id="markdown11" name="markdown11" value="markdown11">
@@ -104,7 +105,7 @@
           <label for="markdown12"> (-) Incorrect</label>
         </div>
         <div class="markdowns_category">
-          <h2>1.4 Case category</h2>
+          <h2>4. Case category</h2>
           <label for="markdown22">
             <select name="markdown22" id="markdown22">
               <option value="policy1">Policy 1</option>
@@ -118,7 +119,7 @@
           <label for="markdown14"> (-) Incorrect</label><br>
         </div>  
         <div class="markdowns_category">
-          <h2>2.1 Case resolution time</h2>
+          <h2>5. Case resolution time</h2>
           <input type="checkbox" id="markdown15" name="markdown15" value="markdown15">
           <label for="markdown15"> (+) Met first RT (4h)</label><br>
           <input type="checkbox" id="markdown16" name="markdown16" value="markdown16">
@@ -132,7 +133,7 @@
     <div class="item">
       <div class="flex_subcolumns">
         <div class="markdowns_category">
-          <h2>2.3 Case transfer</h2>
+          <h2>6. Case transfer</h2>
           <input type="checkbox" id="markdown23" name="markdown23" value="markdown23">
           <label for="markdown23"> (+) Correct</label><br>
           <input type="checkbox" id="markdown24" name="markdown24" value="markdown24">
@@ -145,7 +146,7 @@
           <label for="markdown32"> (/) N/A</label><br>
         </div>
         <div class="markdowns_category">
-          <h2>3.1 Accuracy of reply</h2>
+          <h2>7. Accuracy of reply</h2>
           <input type="checkbox" id="markdown45" name="markdown45" value="markdown45">
           <label for="markdown45"> (+) Correct</label><br>
           <input type="checkbox" id="markdown46" name="markdown46" value="markdown46">
@@ -156,7 +157,7 @@
           <label for="markdown48"> (-) Share Internal Info</label><br>
         </div>
         <div class="markdowns_category">
-          <h2>3.3 Status of the case</h2>
+          <h2>8. Status of the case</h2>
           <input type="checkbox" id="markdown55" name="markdown55" value="markdown55">
           <label for="markdown55"> (+) Correct</label><br>
           <input type="checkbox" id="markdown56" name="markdown56" value="markdown56">
@@ -167,7 +168,7 @@
           <label for="markdown58"> (-) Solution with no resolution/answer provided</label><br>
         </div>
         <div class="markdowns_category">
-          <h2>4.0 Tech chat/support</h2>
+          <h2>9. Tech chat/support</h2>
           <input type="checkbox" id="markdown60" name="markdown60" value="markdown60">
           <label for="markdown60"> (+) Correct</label><br>
           <input type="checkbox" id="markdown61" name="markdown61" value="markdown61">
@@ -212,16 +213,16 @@
           <label for="language14"> Romanian</label><br>
           <input type="checkbox" id="language15" name="language15" value="Spanish">
           <label for="language15"> Spanish</label><br>
-          <input type="checkbox" id="language16" name="language16" value="Other">
-          <label for="language16"> Other</label><br>
-          <input type="checkbox" id="language16" name="language16" value="Other">
-          <label for="language16"> Other</label><br>
-          <input type="checkbox" id="language16" name="language16" value="Other">
-          <label for="language16"> Other</label><br>
-          <input type="checkbox" id="language16" name="language16" value="Other">
-          <label for="language16"> Other</label><br>
-          <input type="checkbox" id="language16" name="language16" value="Other">
-          <label for="language16"> Other</label><br>
+          <input type="checkbox" id="language16" name="language16" value="Swedish">
+          <label for="language16"> Swedish</label><br>
+          <input type="checkbox" id="language17" name="language17" value="Belarusian">
+          <label for="language17"> Belarusian</label><br>
+          <input type="checkbox" id="language18" name="language18" value="Slovenian">
+          <label for="language18"> Slovenian</label><br>
+          <input type="checkbox" id="language19" name="language19" value="Russian">
+          <label for="language19"> Russian</label><br>
+          <input type="checkbox" id="language20" name="language20" value="Other">
+          <label for="language20"> Other</label><br>
         </div> 
       </div>
     </div>
@@ -231,7 +232,7 @@
 <footer class="footer">
         <span class="flex_footer" id="bottom_line">
           <a href="https://pl.majorel.com/">
-            <p>© Scori Company 2022 | All rights reserved</p>
+            <p>© Scori 2.0 Company 2022 | All rights reserved</p>
           </a>
 
           <ul>
