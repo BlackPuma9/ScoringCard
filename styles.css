@@ -43,8 +43,7 @@
     justify-content: space-between;
     background-color: #697268;
     padding: 5px 35px 5px 35px;
-
-  }
+    }
 
   .header_links {
     color: white;
@@ -131,7 +130,11 @@
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    padding: 30px;
+    padding: 30px 35px 5px 35px;
+  }
+
+  #bottom_line {
+    border-bottom: white solid;
   }
 
   ul {
@@ -144,6 +147,11 @@
   .social_media {
     width: 20px;
     height: 20px;
+  }
+
+  #tech_info {
+    margin: 10px 0px 10px 0px;
+    text-align: center;
   }
 
   
