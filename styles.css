@@ -62,9 +62,14 @@
     }
 
     .header_button {
-      border:1px white solid;
+      border: 1px white solid;
       padding: 5px 10px 5px 10px;
       border-radius: 5px;
+    }
+    
+    .header_button:hover {
+      color: black;
+      border: 1px black solid;
     }
 
   a {
