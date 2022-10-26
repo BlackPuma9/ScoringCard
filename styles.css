@@ -29,12 +29,11 @@
   html {
     height: 100%;
   }
+
   body {
     min-height: 100%;
     display: grid;
     grid-template-rows: 1fr auto;
-    background-color: white;
-    /* background-color: #E2E8DD; */
   }
 
   .header {
@@ -45,14 +44,14 @@
     padding: 5px 35px 5px 35px;
     }
 
-    .flex_logo {
-      display: flex;
-      color: white;
-      flex-direction: row;
-      align-items: center;
-      gap: 10px;
-      font-size: 35px;
-    }
+  .flex_logo {
+    display: flex;
+    color: white;
+    flex-direction: row;
+    align-items: center;
+    gap: 10px;
+    font-size: 35px;
+  }
 
   .header_links_flex {
     color: white;
@@ -92,6 +91,24 @@
     margin-bottom: 7px;
   }
 
+  textarea {
+    resize: vertical;
+    height: 70px;
+  }
+
+  input[type=text], textarea {
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    padding: 6px;
+    margin-bottom: 10px;
+  }
+
+  select {
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    padding: 6px;
+  }
+
   h1, h2 {
   font-weight: bold;
   text-align: center;
@@ -108,6 +125,7 @@
     flex-direction: row;
     gap: 6px;
   }
+
   select {
     display: block;
   }
