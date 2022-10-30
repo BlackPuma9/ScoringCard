@@ -190,4 +190,11 @@
     text-align: center;
   }
 
-  
+  /* Form valdation */
+  input:valid, select:valid {
+    background-color: rgb(85, 241, 57);
+  }
+
+  input:invalid, select:invalid {
+    background-color: rgb(207, 137, 227);
+  }

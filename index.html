@@ -7,6 +7,7 @@
   <title>Document</title>
   <link rel="stylesheet" type="text/css" href="reset.css" />
   <link rel="stylesheet" type="text/css" href="styles.css" />
+  <link rel="stylesheet" type="text/javascript" href="main.js" />
 </head>
 
 <!-- Body written based on grid system and footer as well -->
@@ -26,211 +27,233 @@
     </div>
   </div>
   
+  <form action="/" method="get">
+    <div class="flex_maincolumns">
+      <!-- "Evaluation column" -->
+      <div class="item">
+        <div id="criteria_first_column" class="flex_subcolumns">
+          <h1>Evaluation Card</h1>
+            <label for="qa_mail">QA email address:</label>
+            <input 
+            type="email" 
+            id="qa_mail" 
+            name="qa_mail" 
+            maxlength="64"
+            placeholder="QA_email@scori.com"
+            pattern=".+@scori\.com"
+            title="Please provide only a Scori corporate e-mail address"
+            required>
+            <label for="agent_mail">Agent email:</label>
+            <input 
+            type="email" 
+            id="agent_mail" 
+            name="agent_mail" 
+            maxlength="64"
+            placeholder="Agent_email@scori.com"
+            pattern=".+@scori\.com"
+            title="Please provide only a Scori corporate e-mail address"
+            required>
+            <label for="casenumber">Case ID:</label>
+            <input 
+            type="number" 
+            id="casenumber" 
+            name="casenumber" 
+            maxlength="12"
+            required><br>
 
-  <div class="flex_maincolumns">
-    <!-- "Evaluation column" -->
-    <div class="item">
-      <div id="criteria_first_column" class="flex_subcolumns">
-        <h1>Evaluation Card</h1>
-          <label for="qamail">QA email address:</label>
-          <input type="text" id="qamail" name="qamail">
-          <label for="agent_mail">Agent Ldap:</label>
-          <input type="text" id="agent_mail" name="agent_mail">
-          <label for="casenumber">Case ID:</label>
-          <input type="text" id="casenumber" name="casenumber"><br>
+            <label for="qacomment">QA comment:</label>
+            <textarea type="text" id="qacomment" name="qacomment" placeholder="Write your comment"></textarea>
+            <label for="improveline">Areas of improvement:</label>
+            <input type="text" id="improveline" name="improveline" placeholder="Write a short note"><br>
 
-          <label for="qacomment">QA comment:</label>
-          <textarea type="text" id="qacomment" name="qacomment" placeholder="Write your comment"></textarea>
-          <label for="improveline">Areas of improvement:</label>
-          <input type="text" id="improveline" name="improveline" placeholder="Write a short note"><br>
+            <label for="cycle">Cycle/Week:</label>
+            <select name="quater" id="quater" required>
+                <option value="Q1M1">Q1M1</option>
+                <option value="Q1M2">Q1M2</option>
+                <option value="Q1M3">Q1M3</option>
+                <option value="Q2M1">Q2M1</option>
+                <option value="Q2M2">Q2M2</option>
+                <option value="Q2M3">Q2M3</option>
+                <option value="Q3M1">Q3M1</option>
+                <option value="Q3M2">Q3M2</option>
+                <option value="Q3M3">Q3M3</option>
+                <option value="Q4M1">Q4M1</option>
+                <option value="Q4M2">Q4M2</option>
+                <option value="Q4M3">Q4M3</option>
+            </select>
+            <select name="week" id="week" required>
+              <option value="W1">Week 1</option>
+              <option value="W2">Week 2</option>
+              <option value="W3">Week 3</option>
+              <option value="W4">Week 4</option>
+              <option value="W5">Week 5</option>
+            </select>
+            <select name="year" id="year" required>
+              <option value="2021">2021</option>
+              <option value="2022">2022</option>
+              <option value="2023">2023</option>
+              <option value="2024">2024</option>
+            </select><br>
+            
+            <span class="flex_button">
+            <button type="button">&#8594 Next case</button>
+            <button type="button">&#8592 Previous case</button>
+            <button type="submit" value="submit">Submit</button>
+            </span>
+          </div> 
+        </div>
 
-          <label for="cycle">Cycle/Week:</label>
-          <select name="quater" id="quater">
-              <option value="Q1M1">Q1M1</option>
-              <option value="Q1M2">Q1M2</option>
-              <option value="Q1M3">Q1M3</option>
-              <option value="Q2M1">Q2M1</option>
-              <option value="Q2M2">Q2M2</option>
-              <option value="Q2M3">Q2M3</option>
-              <option value="Q3M1">Q3M1</option>
-              <option value="Q3M2">Q3M2</option>
-              <option value="Q3M3">Q3M3</option>
-              <option value="Q4M1">Q4M1</option>
-              <option value="Q4M2">Q4M2</option>
-              <option value="Q4M3">Q4M3</option>
-          </select>
-          <select name="week" id="week">
-            <option value="W1">Week 1</option>
-            <option value="W2">Week 2</option>
-            <option value="W3">Week 3</option>
-            <option value="W4">Week 4</option>
-            <option value="W5">Week 5</option>
-          </select>
-          <select name="year" id="year">
-            <option value="2021">2021</option>
-            <option value="2022">2022</option>
-            <option value="2023">2023</option>
-            <option value="2024">2024</option>
-          </select><br>
-          
-          <span class="flex_button">
-          <button type="button">&#8594 Next case</button>
-          <button type="button">&#8592 Previous case</button>
-          <button type="button">Submit</button>
-          </span>
-        </div> 
+      <div class="item">
+        <div class="flex_subcolumns">
+          <div class="markdowns_category">
+            <h2>1. Customer Authorization</h2>
+            <input type="radio" id="markdown1" name="markdown1" value="markdown1">
+            <label for="markdown1"> (+) Correct</label><br>
+            <input type="radio" id="markdown2" name="markdown2" value="markdown2">
+            <label for="markdown2"> (-) Incorrect</label><br>
+          </div>
+          <div class="markdowns_category">
+            <h2>2. Greetings and conversation tone</h2>
+            <input type="radio" id="markdown3" name="markdown3" value="markdown3">
+            <label for="markdown3"> (+) Correct</label><br>
+            <input type="radio" id="markdown4" name="markdown4" value="markdown4">
+            <label for="markdown4"> (+/-) Partially correct</label><br>
+            <input type="radio" id="markdown5" name="markdown5" value="markdown5">
+            <label for="markdown5"> (-) Incorrect</label><br>
+          </div>
+          <div class="markdowns_category">
+            <h2>3. Case resolution</h2>
+            <input type="radio" id="markdown6" name="markdown6" value="markdown6">
+            <label for="markdown6"> (+) Correct</label><br>
+            <input type="radio" id="markdown7" name="markdown7" value="markdown7">
+            <label for="markdown7"> (+/-) Partially correct</label><br>
+            <input type="radio" id="markdown8" name="markdown8" value="markdown8">
+            <label for="markdown8"> (-) Incorrect</label>
+          </div>
+          <div class="markdowns_category">
+            <h2>4. Case category</h2>
+            <label for="markdown9">
+              <select name="markdown9" id="markdown9">
+                <option value="policy1">Policy 1</option>
+                <option value="policy2">Policy 2</option>
+                <option value="policy3">Policy 3</option>
+                <option value="policy4">Policy 4</option>
+              </select></label>
+            <input type="radio" id="markdown10" name="markdown10" value="markdown10">
+            <label for="markdown10"> (+) Correct</label><br>
+            <input type="radio" id="markdown11" name="markdown11" value="markdown11">
+            <label for="markdown11"> (-) Incorrect</label><br>
+          </div>  
+          <div class="markdowns_category">
+            <h2>5. Case resolution time</h2>
+            <input type="radio" id="markdown12" name="markdown12" value="markdown12">
+            <label for="markdown12"> (+) Met first RT (4h)</label><br>
+            <input type="radio" id="markdown13" name="markdown13" value="markdown13">
+            <label for="markdown13"> (+) Met second RT (24h)</label><br>
+            <input type="radio" id="markdown14" name="markdown14" value="markdown14">
+            <label for="markdown14"> (-) Didn't met RT</label><br>
+          </div> 
+        </div>
       </div>
 
-    <div class="item">
-      <div class="flex_subcolumns">
-        <div class="markdowns_category">
-          <h2>1. Customer Authorization</h2>
-          <input type="checkbox" id="markdown1" name="markdown1" value="markdown1">
-          <label for="markdown1"> (+) Correct</label><br>
-          <input type="checkbox" id="markdown2" name="markdown2" value="markdown2">
-          <label for="markdown2"> (-) Incorrect</label><br>
+      <div class="item">
+        <div class="flex_subcolumns">
+          <div class="markdowns_category">
+            <h2>6. Case transfer</h2>
+            <input type="radio" id="markdown15" name="markdown15" value="markdown15">
+            <label for="markdown15"> (+) Correct</label><br>
+            <input type="radio" id="markdown16" name="markdown16" value="markdown16">
+            <label for="markdown16"> (-) Unnecessary transfer</label><br>
+            <input type="radio" id="markdown17" name="markdown17" value="markdown17">
+            <label for="markdown17"> (-) Failed to transfer accordingly</label><br>
+            <input type="radio" id="markdown18" name="markdown18" value="markdown18">
+            <label for="markdown18"> (-) Transfer request unclear/missing information</label><br>
+            <input type="radio" id="markdown19" name="markdown19" value="markdown19">
+            <label for="markdown19"> (/) N/A</label><br>
+          </div>
+          <div class="markdowns_category">
+            <h2>7. Accuracy of reply</h2>
+            <input type="radio" id="markdown20" name="markdown20" value="markdown20">
+            <label for="markdown20"> (+) Correct</label><br>
+            <input type="radio" id="markdown21" name="markdown21" value="markdown21">
+            <label for="markdown21"> (+/-) Spelling/grammar errors</label><br>
+            <input type="radio" id="markdown22" name="markdown22" value="markdown22">
+            <label for="markdown22"> (-) Incorrect reply template</label><br>
+            <input type="radio" id="markdown23" name="markdown23" value="markdown23">
+            <label for="markdown23"> (-) Share Internal Info</label><br>
+          </div>
+          <div class="markdowns_category">
+            <h2>8. Status of the case</h2>
+            <input type="radio" id="markdown24" name="markdown24" value="markdown24">
+            <label for="markdown24"> (+) Correct</label><br>
+            <input type="radio" id="markdown25" name="markdown25" value="markdown25">
+            <label for="markdown25"> (-) Incorrect duplication</label><br>
+            <input type="radio" id="markdown26" name="markdown26" value="markdown26">
+            <label for="markdown26"> (-) Incorrect </label><br>
+            <input type="radio" id="markdown27" name="markdown27" value="markdown27">
+            <label for="markdown27"> (-) Solution with no resolution/answer provided</label><br>
+          </div>
+          <div class="markdowns_category">
+            <h2>9. Tech chat/support</h2>
+            <input type="radio" id="markdown28" name="markdown28" value="markdown28">
+            <label for="markdown28"> (+) Correct</label><br>
+            <input type="radio" id="markdown29" name="markdown29" value="markdown29">
+            <label for="markdown29"> (-) Incorrect </label><br>
+            <input type="radio" id="markdown30" name="markdown30" value="markdown30">
+            <label for="markdown30"> (/) N/A</label><br>
+          </div>
         </div>
-        <div class="markdowns_category">
-          <h2>2. Greetings and conversation tone</h2>
-          <input type="checkbox" id="markdown3" name="markdown3" value="markdown3">
-          <label for="markdown3"> (+) Correct</label><br>
-          <input type="checkbox" id="markdown4" name="markdown4" value="markdown4">
-          <label for="markdown4"> (+/-) Partially correct</label><br>
-          <input type="checkbox" id="markdown5" name="markdown5" value="markdown5">
-          <label for="markdown5"> (-) Incorrect</label><br>
+      </div>
+
+      <div class="item">
+        <div id="last_column" class="flex_subcolumns">
+          <div class="markdowns_category">
+            <h2>Language</h2>
+            <input type="radio" id="language1" name="language1" value="Ukrainian">
+            <label for="language1"> Ukranian</label><br>
+            <input type="radio" id="language2" name="language2" value="Czech">
+            <label for="language2"> Czech</label><br>
+            <input type="radio" id="language3" name="language3" value="Dutch">
+            <label for="language3"> Dutch</label><br>
+            <input type="radio" id="language4" name="language4" value="English">
+            <label for="language4"> English</label><br>
+            <input type="radio" id="language5" name="language5" value="Finnish">
+            <label for="language5"> Finnish</label><br>
+            <input type="radio" id="language6" name="language6" value="French">
+            <label for="language3"> French</label><br>
+            <input type="radio" id="language7" name="language7" value="German">
+            <label for="language7"> German</label><br>
+            <input type="radio" id="language8" name="language8" value="Russian">
+            <label for="language8"> Russian</label><br>
+            <input type="radio" id="language9" name="language9" value="Hungarian">
+            <label for="language9"> Hungarian</label><br>
+            <input type="radio" id="language10" name="language10" value="Italian">
+            <label for="language10"> Italian</label><br>
+            <input type="radio" id="language11" name="language11" value="Lithuanian">
+            <label for="language11"> Lithuanian</label><br>
+            <input type="radio" id="language12" name="language12" value="Polish">
+            <label for="language12"> Polish</label><br>
+            <input type="radio" id="language13" name="language13" value="Portuguese">
+            <label for="language13"> Portuguese</label><br>
+            <input type="radio" id="language14" name="language14" value="Romanian">
+            <label for="language14"> Romanian</label><br>
+            <input type="radio" id="language15" name="language15" value="Spanish">
+            <label for="language15"> Spanish</label><br>
+            <input type="radio" id="language16" name="language16" value="Swedish">
+            <label for="language16"> Swedish</label><br>
+            <input type="radio" id="language17" name="language17" value="Belarusian">
+            <label for="language17"> Belarusian</label><br>
+            <input type="radio" id="language18" name="language18" value="Slovenian">
+            <label for="language18"> Slovenian</label><br>
+            <input type="radio" id="language19" name="language19" value="Norwegian">
+            <label for="language19"> Norwegian</label><br>
+            <input type="radio" id="language20" name="language20" value="Other">
+            <label for="language20"> Other</label><br>
+          </div> 
         </div>
-        <div class="markdowns_category">
-          <h2>3. Case resolution</h2>
-          <input type="checkbox" id="markdown6" name="markdown6" value="markdown6">
-          <label for="markdown6"> (+) Correct</label><br>
-          <input type="checkbox" id="markdown7" name="markdown7" value="markdown7">
-          <label for="markdown7"> (+/-) Partially correct</label><br>
-          <input type="checkbox" id="markdown8" name="markdown8" value="markdown8">
-          <label for="markdown8"> (-) Incorrect</label>
-        </div>
-        <div class="markdowns_category">
-          <h2>4. Case category</h2>
-          <label for="markdown9">
-            <select name="markdown9" id="markdown9">
-              <option value="policy1">Policy 1</option>
-              <option value="policy2">Policy 2</option>
-              <option value="policy3">Policy 3</option>
-              <option value="policy4">Policy 4</option>
-            </select></label>
-          <input type="checkbox" id="markdown10" name="markdown10" value="markdown10">
-          <label for="markdown10"> (+) Correct</label><br>
-          <input type="checkbox" id="markdown11" name="markdown11" value="markdown11">
-          <label for="markdown11"> (-) Incorrect</label><br>
-        </div>  
-        <div class="markdowns_category">
-          <h2>5. Case resolution time</h2>
-          <input type="checkbox" id="markdown12" name="markdown12" value="markdown12">
-          <label for="markdown12"> (+) Met first RT (4h)</label><br>
-          <input type="checkbox" id="markdown13" name="markdown13" value="markdown13">
-          <label for="markdown13"> (+) Met second RT (24h)</label><br>
-          <input type="checkbox" id="markdown14" name="markdown14" value="markdown14">
-          <label for="markdown14"> (-) Didn't met RT</label><br>
-        </div> 
       </div>
     </div>
-
-    <div class="item">
-      <div class="flex_subcolumns">
-        <div class="markdowns_category">
-          <h2>6. Case transfer</h2>
-          <input type="checkbox" id="markdown15" name="markdown15" value="markdown15">
-          <label for="markdown15"> (+) Correct</label><br>
-          <input type="checkbox" id="markdown16" name="markdown16" value="markdown16">
-          <label for="markdown16"> (-) Unnecessary transfer</label><br>
-          <input type="checkbox" id="markdown17" name="markdown17" value="markdown17">
-          <label for="markdown17"> (-) Failed to transfer accordingly</label><br>
-          <input type="checkbox" id="markdown18" name="markdown18" value="markdown18">
-          <label for="markdown18"> (-) Transfer request unclear/missing information</label><br>
-          <input type="checkbox" id="markdown19" name="markdown19" value="markdown19">
-          <label for="markdown19"> (/) N/A</label><br>
-        </div>
-        <div class="markdowns_category">
-          <h2>7. Accuracy of reply</h2>
-          <input type="checkbox" id="markdown20" name="markdown20" value="markdown20">
-          <label for="markdown20"> (+) Correct</label><br>
-          <input type="checkbox" id="markdown21" name="markdown21" value="markdown21">
-          <label for="markdown21"> (+/-) Spelling/grammar errors</label><br>
-          <input type="checkbox" id="markdown22" name="markdown22" value="markdown22">
-          <label for="markdown22"> (-) Incorrect reply template</label><br>
-          <input type="checkbox" id="markdown23" name="markdown23" value="markdown23">
-          <label for="markdown23"> (-) Share Internal Info</label><br>
-        </div>
-        <div class="markdowns_category">
-          <h2>8. Status of the case</h2>
-          <input type="checkbox" id="markdown24" name="markdown24" value="markdown24">
-          <label for="markdown24"> (+) Correct</label><br>
-          <input type="checkbox" id="markdown25" name="markdown25" value="markdown25">
-          <label for="markdown25"> (-) Incorrect duplication</label><br>
-          <input type="checkbox" id="markdown26" name="markdown26" value="markdown26">
-          <label for="markdown26"> (-) Incorrect </label><br>
-          <input type="checkbox" id="markdown27" name="markdown27" value="markdown27">
-          <label for="markdown27"> (-) Solution with no resolution/answer provided</label><br>
-        </div>
-        <div class="markdowns_category">
-          <h2>9. Tech chat/support</h2>
-          <input type="checkbox" id="markdown28" name="markdown28" value="markdown28">
-          <label for="markdown28"> (+) Correct</label><br>
-          <input type="checkbox" id="markdown29" name="markdown29" value="markdown29">
-          <label for="markdown29"> (-) Incorrect </label><br>
-          <input type="checkbox" id="markdown30" name="markdown30" value="markdown30">
-          <label for="markdown30"> (/) N/A</label><br>
-        </div>
-      </div>
-    </div>
-
-    <div class="item">
-      <div id="last_column" class="flex_subcolumns">
-        <div class="markdowns_category">
-          <h2>Language</h2>
-          <input type="checkbox" id="language1" name="language1" value="Ukrainian">
-          <label for="language1"> Ukranian</label><br>
-          <input type="checkbox" id="language2" name="language2" value="Czech">
-          <label for="language2"> Czech</label><br>
-          <input type="checkbox" id="language3" name="language3" value="Dutch">
-          <label for="language3"> Dutch</label><br>
-          <input type="checkbox" id="language4" name="language4" value="English">
-          <label for="language4"> English</label><br>
-          <input type="checkbox" id="language5" name="language5" value="Finnish">
-          <label for="language5"> Finnish</label><br>
-          <input type="checkbox" id="language6" name="language6" value="French">
-          <label for="language3"> French</label><br>
-          <input type="checkbox" id="language7" name="language7" value="German">
-          <label for="language7"> German</label><br>
-          <input type="checkbox" id="language8" name="language8" value="Russian">
-          <label for="language8"> Russian</label><br>
-          <input type="checkbox" id="language9" name="language9" value="Hungarian">
-          <label for="language9"> Hungarian</label><br>
-          <input type="checkbox" id="language10" name="language10" value="Italian">
-          <label for="language10"> Italian</label><br>
-          <input type="checkbox" id="language11" name="language11" value="Lithuanian">
-          <label for="language11"> Lithuanian</label><br>
-          <input type="checkbox" id="language12" name="language12" value="Polish">
-          <label for="language12"> Polish</label><br>
-          <input type="checkbox" id="language13" name="language13" value="Portuguese">
-          <label for="language13"> Portuguese</label><br>
-          <input type="checkbox" id="language14" name="language14" value="Romanian">
-          <label for="language14"> Romanian</label><br>
-          <input type="checkbox" id="language15" name="language15" value="Spanish">
-          <label for="language15"> Spanish</label><br>
-          <input type="checkbox" id="language16" name="language16" value="Swedish">
-          <label for="language16"> Swedish</label><br>
-          <input type="checkbox" id="language17" name="language17" value="Belarusian">
-          <label for="language17"> Belarusian</label><br>
-          <input type="checkbox" id="language18" name="language18" value="Slovenian">
-          <label for="language18"> Slovenian</label><br>
-          <input type="checkbox" id="language19" name="language19" value="Norwegian">
-          <label for="language19"> Norwegian</label><br>
-          <input type="checkbox" id="language20" name="language20" value="Other">
-          <label for="language20"> Other</label><br>
-        </div> 
-      </div>
-    </div>
-  </div>
+  </form>
 </body>
 
 <footer class="footer">
