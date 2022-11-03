@@ -55,11 +55,13 @@
             required></label>
             <label for="casenumber">Case ID:</label>
             <input 
-            type="number" 
+            type="text" 
             id="casenumber" 
             name="casenumber" 
             minlength="12"
             maxlength="12"
+            pattern="\d*"
+            title="Only case number 0000000000000"
             required><br>
 
             <label for="qacomment">QA comment:</label>
