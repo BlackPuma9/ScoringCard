@@ -192,9 +192,9 @@
 
   /* Form valdation */
   input:valid, select:valid {
-    background-color: rgb(193, 223, 188);
+    background-color: rgb(211, 243, 205);
   }
 
   input:invalid, select:invalid {
-    background-color: rgb(231, 169, 169);
+    background-color: rgb(233, 201, 201);
   }
