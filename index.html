@@ -27,7 +27,7 @@
     </div>
   </div>
   
-  <form action="" method="get">
+  <form action="" method="">
     <div class="flex_maincolumns">
       <!-- "Evaluation column" -->
       <div class="item">
@@ -57,11 +57,9 @@
             <input 
             type="text" 
             id="casenumber" 
-            name="casenumber" 
-            minlength="12"
-            maxlength="12"
-            pattern="\d*"
-            title="Only case number 0000000000000"
+            name="casenumber"
+            pattern="^\d-\d\d\d\d\d\d\d\d\d$"
+            title="Only case number"
             required><br>
 
             <label for="qacomment">QA comment:</label>
@@ -101,7 +99,7 @@
             <span class="flex_button">
             <button type="button">Finish with review</button>
             <button type="reset">Skip case</button>
-            <button type="submit" value="submit">Submit</button>
+            <button id="btn" type="click">Submit</button>
             </span>
           </div> 
         </div>
